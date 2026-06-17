@@ -1,10 +1,9 @@
-const profitCtx =
-document.getElementById('profitChart');
+const ctx = document.getElementById('salesChart');
 
-new Chart(profitCtx,{
-    type:'line',
-    data:{
-        labels:[
+new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: [
             'Jan',
             'Feb',
             'Mar',
@@ -12,18 +11,18 @@ new Chart(profitCtx,{
             'May',
             'Jun'
         ],
-        datasets:[{
-            label:'Profit (Million Rp)',
-            data:[
-                45,
-                55,
-                60,
-                52,
-                70,
-                80
+        datasets: [{
+            label: 'Sales (Million Rp)',
+            data: [
+                850,
+                920,
+                980,
+                1050,
+                1120,
+                1245
             ],
-            borderWidth:3,
-            tension:.4
+            borderWidth: 3,
+            tension: 0.4
         }]
     }
 });
