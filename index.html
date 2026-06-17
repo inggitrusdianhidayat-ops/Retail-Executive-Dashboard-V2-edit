@@ -1,66 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Retail Executive Dashboard V2</title>
 
-<link rel="stylesheet" href="style.css">
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Executive Dashboard V2</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
 
-    <div class="main">
-<h1>Branch Performance Dashboard</h1>
-<div class="cards">
+<div class="main">
 
-    <div class="card">
-        <h3>Total Sales</h3>
-        <p>Rp 1.245.000.000</p>
+    <h1>Retail Executive Dashboard</h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Total Sales</h3>
+            <p>Rp 1.245 M</p>
+        </div>
+
+        <div class="card">
+            <h3>Gross Profit</h3>
+            <p>Rp 465 M</p>
+        </div>
+
+        <div class="card">
+            <h3>Net Profit</h3>
+            <p>Rp 355 M</p>
+        </div>
+
+        <div class="card">
+            <h3>Achievement</h3>
+            <p class="positive">95.8%</p>
+        </div>
+
     </div>
 
-    <div class="card">
-        <h3>Gross Profit</h3>
-        <p>Rp 465.000.000</p>
+    <div class="cards">
+
+        <div class="card">
+            <h3>Traffic</h3>
+            <p>12,500</p>
+        </div>
+
+        <div class="card">
+            <h3>Transactions</h3>
+            <p>2,400</p>
+        </div>
+
+        <div class="card">
+            <h3>ATV</h3>
+            <p>Rp 85,000</p>
+        </div>
+
+        <div class="card">
+            <h3>UPT</h3>
+            <p>2.7</p>
+        </div>
+
     </div>
 
-    <div class="card">
-        <h3>Net Profit</h3>
-        <p>Rp 355.000.000</p>
-    </div>
-
-    <div class="card">
-        <h3>Achievement</h3>
-        <p class="positive">95.8%</p>
+    <div class="chart-container">
+        <h2>Sales Trend</h2>
+        <canvas id="salesChart"></canvas>
     </div>
 
 </div>
 
-<div class="cards">
+<script src="script.js"></script>
 
-    <div class="card">
-        <h3>Traffic</h3>
-        <p>12.500</p>
-    </div>
-
-    <div class="card">
-        <h3>Transactions</h3>
-        <p>2.400</p>
-    </div>
-
-    <div class="card">
-        <h3>ATV</h3>
-        <p>Rp 85.000</p>
-    </div>
-
-    <div class="card">
-        <h3>UPT</h3>
-        <p>2.7</p>
-    </div>
-
-</div>
-<div class="chart-container">
-    <h2>Profit Trend</h2>
-    <canvas id="profitChart"></canvas>
-</div>
+</body>
+</html>
